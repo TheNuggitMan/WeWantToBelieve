@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: papyrus;
+    font-weight: 600;
+    background-color: silver;
+}
+
+.container {
+    display: grid;
+    grid-template: 61px 469px 65px repeat(4, 1fr) 48px / repeat(12, 1fr);
+}
+
+.loginBar {
+    display:flex;
+    justify-content: flex-end;
+    padding: 20px 10px;
+}
+
+label, input, p {
+    margin: 0px 10px 0px 0px;
+}
+
+p, label {
+    font-size: 2rem;
+}
+header {
+    grid-column: 1 / -1;
+}
+
+.hero {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    overflow: hidden;
+}
+
+nav {
+    grid-column: 4 / -1;
+    grid-row: 3 / span 1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10%;
+    padding: 5px 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.active {
+    background-color: snow;
+}
+
+.none {
+    display: none;
+}
+
+.aboutText {
+    max-width: 600px;
+    margin: 0% 5%;
+    grid-column: 7 / span 5;
+    grid-row: 4 / 5;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.aboutImgContainer {
+    max-width: 450px;
+    grid-column: 3 / -1;
+    grid-row: 4 / 5;
+    margin: 5% 0;
+}
+.aboutImgContainer img {
+    max-width: 100%;
+}
+
+.recentSightings {
+    grid-column: 5 / 11;
+}
