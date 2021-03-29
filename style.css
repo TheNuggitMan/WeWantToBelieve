@@ -15,7 +15,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: 61px 469px 65px repeat(4, 1fr) 48px / repeat(12, 1fr);
+    grid-template: 61px 469px 65px 400px repeat(3, 1fr) 350px 100px 400px 120px / repeat(12, 1fr);
 }
 
 .loginBar {
@@ -100,6 +100,91 @@ li a {
     max-width: 100%;
 }
 
+.sightHead {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    justify-self: center;
+}
 .recentSightings {
-    grid-column: 5 / 11;
+    grid-column: 2 / 12;
+    grid-row: 6 / 7;
+    display: flex;
+    justify-content: flex-start;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 100%;
+    background-color: snow;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+th {
+    font-size: 2.5rem;
+    background-color: whitesmoke;
+}
+
+td {
+    font-weight: 400;
+}
+
+.eventHead {
+    grid-area: 7 / 1 / 8 / -1;
+    justify-self: center;
+}
+
+.eventCarousel {
+    grid-area: 8 / 2 / 9 / 12;
+    display: flex;
+    justify-content: center;
+}
+
+.eventCarousel img {
+    min-width: 50%;
+}
+
+#signUp {
+    grid-area: 10 / 2 / 11 / 12;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#signUp h1 {
+    font-size: 5rem;
+    max-width: 350px;
+}
+
+#signUp input {
+    margin: 20px;
+}
+
+#signUp label {
+    float: right;
+    font-size: 3rem;
+}
+
+.signUpBtn {
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+footer {
+    grid-area: 11 / 1 / 12 / -1;
+    margin: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    border-radius: 5px;
 }

@@ -11,7 +11,7 @@
                 <div class="loginBar">
                     <label for="loginName">Name:</label><input type="text" name="loginName" value="">
                     <label for="loginEmail">Email:</label><input type="email" name="loginEmail" value="">
-                    <input type="submit" name="submit" value="Log in"> <p>or</p> <button type="button" name="signup">Sign Up!</button>
+                    <input type="submit" name="submit" value="Log in"> <p>or</p> <button type="button" name="signup">Register!</button>
                 </div>
             </header>
             <div class="hero">
@@ -21,9 +21,9 @@
                 <ul>
                     <li class="none active"></li>
                     <li class="btn"><a href="#about">About</a></li>
-                    <li class="btn"><a href="#">Sightings</a></li>
-                    <li class="btn"><a href="#">Events</a></li>
-                    <li class="btn"><a href="#">Contact</a></li>
+                    <li class="btn"><a href="#sightings">Sightings</a></li>
+                    <li class="btn"><a href="#events">Events</a></li>
+                    <li class="btn"><a href="#signUp">Sign Up</a></li>
                 </ul>
             </nav>
                 <div class="mainHeader">
@@ -36,12 +36,56 @@
                     <h1 id="about" class="title">About</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="recentSightings title">
+                <div id="sightings" class="sightHead title">
                     <h1>Recent Sightings</h1>
                 </div>
-                <!-- <div class="recentSightings">
-                    <!-- table -->
-                </div> -->
+                <div class="recentSightings">
+                    <table>
+                        <tr>
+                            <th>What</th>
+                            <th>Where</th>
+                            <th>When</th>
+                        </tr>
+                        <tr>
+                            <td>Slow Moving Object w/ Lights</td>
+                            <td>Paignton</td>
+                            <td>02/02/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Hovering Object</td>
+                            <td>Stokeinteignhead</td>
+                            <td>01/01/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Strange Radio Transmission</td>
+                            <td>Combeinteignhead</td>
+                            <td>24/12/2020</td>
+                        </tr>
+                        <tr>
+                            <td>UFO</td>
+                            <td>Beacon Hill</td>
+                            <td>03/11/2020</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="events" class="eventHead title">
+                    <h1>Events</h1>
+                </div>
+                <div class="eventCarousel">
+                    <img src="img/stargazing.jpg" alt="star gazing">
+                </div>
+                <div id="signUp">
+                    <h1>Sign up to our monthly newsletter!</h1>
+                    <form>
+                        <label for="name">Full Name:<input type="text" name="name" required></label><br>
+                        <label for="email">Email:<input type="text" name="email" required></label><br>
+                        <input class="signUpBtn" type="submit" name="submit" value="Sign Up!">
+                    </form>
+                </div>
+                <footer>
+                    <h2>&copy We Want To Believe 2021</h2>
+                    <a href="#"><img src="img/alienLogo.png" alt="alien logo" title="top"></a>
+                </footer>
             </div>
 
         <script type="text/javascript" src="script.js"></script>
