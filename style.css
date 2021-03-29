@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'papyrus';
-    src: url('resources/PAPYRUS.TTF') format('truetype');
+    src: url('resources/PAPYRUS.woff') format('woff');
 }
 
 * {
