@@ -112,12 +112,19 @@ li a {
     grid-column: 1 / -1;
     grid-row: 6 / 7;
     justify-self: center;
+    display: flex;
+    justify-content: center;
 }
+
+.sightHead h1 {
+    max-width: 600px;
+}
+
 .recentSightings {
     grid-column: 2 / 12;
     grid-row: 7 / 8;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 table {
@@ -199,28 +206,41 @@ footer img {
 }
 
 @media (max-device-width: 480px) {
+    .container {
+        grid-template: 61px 469px 65px 150px 800px repeat(3, 1fr) 350px 100px 400px 120px / repeat(12, 1fr);
+    }
     .aboutContainer {
         justify-content: center;
+        grid-column: 2 / 12;
     }
     .aboutText {
-        max-width: 600px;
-        max-height: 300px;
+        max-width: 100%;
+        min-height: 700px;
         text-align: center;
+    }
+    .aboutText p {
+        font-size: 4rem;
     }
     .aboutImgContainer {
         visibility: hidden;
         position: absolute;
     }
     .title {
-        2.5rem;
+        font-size: 2.5rem;
     }
     nav {
         grid-column: 1 / -1;
         height: 100px;
         justify-self: center;
     }
-
     li {
         margin-right: 0;
     }
+    .sightHead h1 {
+        max-width: 400px;
+    }
+    .sightHead {
+        min-width: 500px;
+    }
+
 }
