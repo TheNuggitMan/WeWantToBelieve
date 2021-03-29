@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'papyrus';
+    src: url('resources/PAPYRUS.TTF') format('truetype');
+}
 
 * {
     box-sizing: border-box;
@@ -9,7 +13,7 @@ html {
 
 body {
     margin: 0 auto;
-    font-family: papyrus;
+    font-family: 'papyrus';
     font-weight: 600;
     background-color: silver;
 }
