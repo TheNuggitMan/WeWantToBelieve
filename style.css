@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -100,22 +101,6 @@ li a {
     max-height: 400px;
 }
 
-@media only screen and (max-width: 480px) {
-    .aboutText p {
-        max-width: 300px;
-    }
-    .aboutImgContainer {
-        min-width: 150px;
-    }
-    .title {
-        2.5rem;
-    }
-    nav {
-        grid-column: 1 / -1;
-    }
-}
-
-
 .aboutImgContainer {
     max-width: 450px;
 }
@@ -211,4 +196,31 @@ footer {
 
 footer img {
     border-radius: 5px;
+}
+
+@media (max-device-width: 480px) {
+    .aboutContainer {
+        justify-content: center;
+    }
+    .aboutText {
+        max-width: 600px;
+        max-height: 300px;
+        text-align: center;
+    }
+    .aboutImgContainer {
+        visibility: hidden;
+        position: absolute;
+    }
+    .title {
+        2.5rem;
+    }
+    nav {
+        grid-column: 1 / -1;
+        height: 100px;
+        justify-self: center;
+    }
+
+    li {
+        margin-right: 0;
+    }
 }
